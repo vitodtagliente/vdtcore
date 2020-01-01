@@ -7,6 +7,6 @@ using namespace core;
 int main()
 {
 	
-
+	cout << "Press a key to continue..." << endl;
 	return getchar();
 }
