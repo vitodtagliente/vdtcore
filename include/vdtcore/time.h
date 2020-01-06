@@ -9,9 +9,7 @@ namespace core
 	class Time
 	{
 	public:
-
-		using clock_t = std::chrono::high_resolution_clock::time_point;
-
+		
 		Time();
 
 		// retrieve the time data
@@ -26,7 +24,10 @@ namespace core
 
 	private:
 
+		using clock_t = std::chrono::high_resolution_clock::time_point;
+
 		// high resolution clocks
+		clock_t m_begin_clock;
 		clock_t m_clock1;
 		clock_t m_clock2;
 
